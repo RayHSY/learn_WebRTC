@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#player, #picture {
+    --width: 40%;
+    width: var(--width);
+    height: calc(var(--width) * 0.75);
+}
+
+.btn {
+    margin: 10px 20px 0;
+    display: block;
+}
+
+.none {
+    filter: none;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.sepia {
+    filter: sepia(1);
+}

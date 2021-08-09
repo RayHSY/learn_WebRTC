@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加滤镜</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <video autoplay playsinline id="player"></video>
+        <div>
+            <button class="take_photo btn">拍照</button>
+            <button class="save btn">保存</button>
+        </div>
+        <canvas id="picture"></canvas>
+    </div>
+
+    <select id="filter">
+        <option value="none">none</option>
+        <!-- 模糊度 -->
+        <option value="blur">blur</option>
+        <!-- 灰度 -->
+        <option value="grayscale">grayscale</option>
+        <!-- 反转 -->
+        <option value="invert">invert</option>
+        <!-- 深褐色 -->
+        <option value="sepia">sepia</option>
+    </select>
+
+    <script src="./filter.js"></script>
+</body>
+</html>
